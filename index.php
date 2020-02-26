@@ -5,8 +5,8 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-require 'connection.php';
-require 'insert.php';
+require 'Model/connection.php';
+require 'View/insert.php';
 
 $lala = new Connection();
 $returnValue = $lala->checkConnection();
