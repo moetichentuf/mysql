@@ -36,4 +36,13 @@ private $pdo;
         $stmt->execute([$firstName, $lastName, $userName, $linkedin, $github, $email, $avatar, $video, $quote, $quoteAuthor, $preferred_language]);
 
     }
+    function getData()
+    {
+
+        $sql = 'SELECT * FROM student_table';
+        $stmt = $this->openConnection()->prepare($sql);
+        $stmt->execute([]);
+        return $stmt->fetchALL(PDO::FETCH_ASSOC);
+
+    }
 }

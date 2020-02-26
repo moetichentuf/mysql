@@ -29,6 +29,24 @@
     <label>preferred language:</label><br>
     <input type="text" id="preferred-language" name="preferred-language" placeholder="preferred language " required><br>
     <br>
+
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill<<?php ?>/td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
     <button value="Submit" name="add"> ADD</button>
 </form>
 </body>
