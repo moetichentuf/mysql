@@ -29,7 +29,8 @@
     <label>preferred language:</label><br>
     <input type="text" id="preferred-language" name="preferred-language" placeholder="preferred language " required><br>
     <br>
-
+<?php /*require 'Controller/HomepageController.php';
+*/?><!--
     <table style="width:100%">
         <tr>
             <th>Firstname</th>
@@ -37,7 +38,7 @@
             <th>Age</th>
         </tr>
         <tr>
-            <td>Jill<<?php ?>/td>
+            <td>Jill<<?php /*echo */?>/td>
             <td>Smith</td>
             <td>50</td>
         </tr>
@@ -46,7 +47,7 @@
             <td>Jackson</td>
             <td>94</td>
         </tr>
-    </table>
+    </table>-->
     <button value="Submit" name="add"> ADD</button>
 </form>
 </body>

@@ -23,7 +23,7 @@ class HomepageController{
             $preferred_language = $_POST['preferred-language'];
             $lala->sendData($firstName, $lastName, $userName, $linkedin, $github, $email, $avatar, $video, $quote, $quoteAuthor, $preferred_language);
         }
-        $data = $lala->getData();
+/*        $data = $lala->getData();*/
     }
 
 }
