@@ -29,11 +29,11 @@ private $pdo;
         }
     }
 
-    function sendData($firstName , $LastName){
+    function sendData($firstName , $lastName,  $userName, $linkedin, $github, $email, $avatar, $video, $quote, $quoteAuthor, $preferred_language){
 
-        $sql = "INSERT INTO student_table (firstName, lastName) VALUES (?,?)";
+        $sql = "INSERT INTO student_table (firstName, lastName, userName, linkedin, github, email, avatar, video, quote, quote_author, preferred_language) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
         $stmt= $this->pdo->prepare($sql);
-        $stmt->execute([$firstName, $LastName]);
+        $stmt->execute([$firstName, $lastName, $userName, $linkedin, $github, $email, $avatar, $video, $quote, $quoteAuthor, $preferred_language]);
 
     }
 }
