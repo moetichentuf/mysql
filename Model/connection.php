@@ -1,7 +1,7 @@
 <?php
 class Connection{
 private $pdo;
-    function openConnection() {
+    public function openConnection() {
         // Try to figure out what these should be for you
         $dbhost    = "localhost";
         $dbuser    = "moeti";
@@ -12,7 +12,7 @@ private $pdo;
         $this->pdo = new PDO('mysql:host='. $dbhost .';dbname='. $db, $dbuser, $dbpass);
 
         // Why we do this here
-        //return $pdo;
+        return $this->pdo;
     }
 
     function checkConnection()
@@ -44,5 +44,7 @@ private $pdo;
         $stmt->execute([]);
         return $stmt->fetchALL(PDO::FETCH_ASSOC);
 
+
     }
+
 }
