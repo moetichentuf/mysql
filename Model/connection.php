@@ -46,5 +46,12 @@ private $pdo;
 
 
     }
-
+    public function getSingleUserData()
+    {
+        $sql = "SELECT * FROM student_table WHERE id = :id";
+        $statement = $this->openConnection()->prepare($sql);
+        $userID = $_GET["user"];
+        $statement->execute([$userID]);
+        return $statement->fetch(PDO:: FETCH_ASSOC);
+    }
 }
